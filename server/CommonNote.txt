@@ -1,0 +1,79 @@
+https://github.com/dofreshmind/application/tree/main/server
+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
+
+baseurl = http://localhost:5000/api
+
+if you test this in you local connect your mongodb server and use it 
+
+req.userId = Login user id 
+
+###doctorurl : /dt/register
+{
+  "name": "surendhar",
+  "email": "surendhar2339@gmail.com",
+  "password": "12345",
+  "PhoneNumber": "7339152339",
+  "ClinicName": "nothing",
+  "isSignupRequestComplete": false,
+  "isLoginAllowed": false,
+  "isClinicVerified": false
+}
+
+loginurl : /dt/login
+{
+  "email": "surendhar2339@gmail.com",
+  "password": "12345",
+}
+
+
+
+###clienturl : /ct/register
+{
+  "name": "surendhar",
+  "email": "surendhar2339@gmail.com",
+  "password": "12345",
+  "PhoneNumber": "7339152339",
+  "companyName": "nothing",
+  "isSignupRequestComplete": false,
+  "isLoginAllowed": false,
+  "isCompanyVerified": false
+}
+
+loginurl : /ct/login
+{
+  "email": "surendhar2339@gmail.com",
+  "password": "12345",
+}
+
+
+
+###admin approve
+
+clienturl : /admin/approve/client
+{
+ "email": "surendhar2339@gmail.com"
+}
+
+doctorurl : /admin/approve/doctor
+{
+ "email": "surendhar2339@gmail.com"
+}
+
+
+### subcribtion
+
+subcribtionurl : /subscribe
+{
+  "userid": "640d774d1ee5c92dfc117a97",
+  "name": "free",
+  "price": 1,
+  "duration": 1,
+  "unit": "month",
+  "updatedAt": "2023-03-12T00:00:00.000Z"
+}
+
+
+subcribtionurl : /subscribeuser 
+{
+  "userid": id ? id : null ,
+}
